@@ -1,0 +1,9 @@
+
+ch.qos.logback logback-classic * * * *
+junit junit * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.hamcrest hamcrest-core * * * *
+org.mockito mockito-core * * * *
+org.apache.maven.plugins maven-toolchains-plugin * * * *
+ch.qos.logback logback-core * * * *
+org.hamcrest hamcrest-library * * * *

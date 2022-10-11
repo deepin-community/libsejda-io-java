@@ -1,0 +1,29 @@
+Source: libsejda-io-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ libcommons-io-java,
+ libsejda-commons-java,
+ libslf4j-java (>= 1.7.21),
+ maven-debian-helper (>= 2.1)
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/java-team/libsejda-io-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libsejda-io-java
+Homepage: http://www.sejda.org
+
+Package: libsejda-io-java
+Architecture: all
+Depends:
+ ${maven:Depends},
+ ${misc:Depends}
+Suggests:
+ ${maven:OptionalDepends}
+Description: layer of Input/Output classes built on top of Java IO and NIO
+ Sejda-io is a simple Input/Output layer built on top of Java standard IO and
+ NIO packages. It is mainly used in Sejda, a PDF library, to ease its further
+ development.

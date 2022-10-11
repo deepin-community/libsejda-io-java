@@ -1,0 +1,4 @@
+version=4
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/sejda-io-$1\.tar\.gz/,\
+uversionmangle=s/_/./g;s/\.RELEASE// \
+  https://github.com/torakiki/sejda-io/tags .*/v?(\d\S+)\.tar\.gz
